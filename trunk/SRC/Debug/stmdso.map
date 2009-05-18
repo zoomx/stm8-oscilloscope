@@ -1,0 +1,1269 @@
+
+Map of Debug\stmdso.sm8 from link file Debug\stmdso.lkf - Mon May 18 09:26:32 2009
+
+
+                               --------
+                               Segments
+                               --------
+
+start 00008080 end 00008293 length   531 segment .const
+start 0000829d end 0000aa14 length 10103 segment .text
+start 00004000 end 00004000 length     0 segment .eeprom
+start 00000000 end 00000002 length     2 segment .bsct, initialized
+start 0000829b end 0000829d length     2 segment .bsct, from
+start 00000002 end 00000015 length    19 segment .ubsct
+start 00000015 end 00000015 length     0 segment .bit
+start 00000015 end 00000015 length     0 segment .share
+start 00000100 end 00000100 length     0 segment .data
+start 00000100 end 00000840 length  1856 segment .bss
+start 00000000 end 00009c24 length 39972 segment .debug
+start 00008000 end 00008080 length   128 segment .const
+start 00008293 end 0000829b length     8 segment .init
+
+
+                               -------
+                               Modules
+                               -------
+
+C:\CXSTM8\Lib\crtsi0.sm8:
+start 0000829d end 000082e8 length    75 section .text
+start 00000100 end 00000100 length     0 section .bss
+start 00000002 end 00000002 length     0 section .ubsct
+
+Debug\stm8s_adc2.o:
+start 000082e8 end 0000865e length   886 section .text
+start 00000000 end 00000f1d length  3869 section .debug
+
+Debug\stm8s_clk.o:
+start 0000865e end 00008b7c length  1310 section .text
+start 00000f1d end 00002712 length  6133 section .debug
+start 00008080 end 0000808c length    12 section .const
+
+Debug\stm8s_gpio.o:
+start 00008b7c end 00008c61 length   229 section .text
+start 00002712 end 0000311c length  2570 section .debug
+
+Debug\stm8s_tim1.o:
+start 00008c61 end 00009b0c length  3755 section .text
+start 0000311c end 00007067 length 16203 section .debug
+
+Debug\stm8s_tim4.o:
+start 00009b0c end 00009cb7 length   427 section .text
+start 00007067 end 00007b9c length  2869 section .debug
+
+Debug\adc.o:
+start 00009cb7 end 00009d15 length    94 section .text
+start 00007b9c end 00007e12 length   630 section .debug
+
+Debug\dataprocess.o:
+start ******** end ******** length     0 section .text *** removed ***
+start 00007e12 end 00007f0b length   249 section .debug
+
+Debug\delay.o:
+start 00009d15 end 00009d22 length    13 section .text
+start 00007f0b end 00007fd9 length   206 section .debug
+
+Debug\key.o:
+start 00009d22 end 00009d85 length    99 section .text
+start 00000000 end 00000002 length     2 section .bsct
+start 00000002 end 00000003 length     1 section .ubsct
+start 00007fd9 end 0000833b length   866 section .debug
+start 0000808c end 000080a0 length    20 section .const
+
+Debug\keyparse.o:
+start 00009d85 end 00009db7 length    50 section .text
+start 0000833b end 0000844f length   276 section .debug
+start 000080a0 end 000080b8 length    24 section .const
+
+Debug\lcd_19264.o:
+start 00009db7 end 0000a6ec length  2357 section .text
+start 00000100 end 00000700 length  1536 section .bss
+start 00000003 end 00000004 length     1 section .ubsct
+start 0000844f end 000091c3 length  3444 section .debug
+start 000080b8 end 00008293 length   475 section .const
+
+Debug\main.o:
+start 0000a6ec end 0000a7c4 length   216 section .text
+start 00000700 end 00000840 length   320 section .bss
+start 00000004 end 0000000a length     6 section .ubsct
+start 000091c3 end 00009663 length  1184 section .debug
+
+Debug\wavedraw.o:
+start 0000a7c4 end 0000a83c length   120 section .text
+start 00009663 end 000099e3 length   896 section .debug
+
+(C:\CXSTM8\Lib\libm0.sm8)imul.o:
+start 0000a83c end 0000a85d length    33 section .text
+
+(C:\CXSTM8\Lib\libm0.sm8)lreg.o:
+start 0000000a end 0000000e length     4 section .ubsct
+
+(C:\CXSTM8\Lib\libm0.sm8)ltor.o:
+start 0000a85d end 0000a86f length    18 section .text
+
+(C:\CXSTM8\Lib\libm0.sm8)ludiv.o:
+start 0000a86f end 0000a883 length    20 section .text
+
+(C:\CXSTM8\Lib\libm0.sm8)ldiv.o:
+start 0000a883 end 0000a96e length   235 section .text
+
+(C:\CXSTM8\Lib\libm0.sm8)lgneg.o:
+start 0000a96e end 0000a981 length    19 section .text
+
+(C:\CXSTM8\Lib\libm0.sm8)lneg.o:
+start 0000a981 end 0000a996 length    21 section .text
+
+(C:\CXSTM8\Lib\libm0.sm8)rtol.o:
+start 0000a996 end 0000a9a8 length    18 section .text
+
+(C:\CXSTM8\Lib\libm0.sm8)xreg.o:
+start 0000000e end 00000011 length     3 section .ubsct
+
+(C:\CXSTM8\Lib\libm0.sm8)yreg.o:
+start 00000011 end 00000014 length     3 section .ubsct
+
+Debug\stm8_interrupt_vector.o:
+start 0000a9a8 end 0000aa14 length   108 section .text
+start 00000014 end 00000015 length     1 section .ubsct
+start 000099e3 end 00009c24 length   577 section .debug
+start 00008000 end 00008080 length   128 section .const
+
+
+                             -----------
+                             Stack usage
+                             -----------
+
+Debug\adc.o:
+L3_TIM1_Init                        12   (2)
+_ADC_GainAdd                         2   (2)
+_ADC_GainSub                         2   (2)
+_ADC_Init                       >   19   (2)
+_ADC_TimeBaseAdd                     2   (2)
+_ADC_TimeBaseSub                     2   (2)
+_ADC_TriggerVoltageAdd               2   (2)
+_ADC_TriggerVoltageSub               2   (2)
+
+Debug\delay.o:
+_delay_us                            3   (3)
+
+Debug\key.o:
+L12_KEY_Read                         8   (3)
+_KEY_Init                       >   10   (2)
+_KEY_Scan                           12   (4)
+
+Debug\keyparse.o:
+_KeyParse                            4   (2)
+_KeyParse_Init                  >    2   (2)
+
+Debug\lcd_19264.o:
+L355_LCD_BufferDrawYLine             8   (8)
+L543_LCD_BufferDrawXLine            10   (10)
+L7431_LCD_GoTextXY              >   11   (6)
+_LCD_BufferDrawLine                 30   (20)
+_LCD_BufferDrawPixel                 8   (8)
+_LCD_BufferDrawXDotLine             10   (10)
+_LCD_BufferDrawYDotLine              8   (8)
+_LCD_BufferToLCD                >   13   (8)
+_LCD_Clear                           4   (4)
+_LCD_Init                            7   (2)
+_LCD_PutChar5x8                     13   (10)
+_LCD_PutString5x8               >   19   (6)
+_LCD_ReadCommand                >    6   (3)
+_LCD_ReadData                   >    6   (3)
+_LCD_WriteCommand                    5   (5)
+_LCD_WriteData                       5   (5)
+
+Debug\main.o:
+_CLK_Init                           14   (2)
+_DSO_ModeChange                      2   (2)
+_DSO_RunStop                         2   (2)
+_GetTriggerPostion                   5   (5)
+_TIM4_Init                           8   (2)
+_TriggerInterruptInit           >    2   (2)
+_assert_failed                       2   (2)
+_main                           >   40   (5)
+
+Debug\stm8_interrupt_vector.o:
+f_ADC2_IRQHandler               >   14   (12)
+f_NonHandledInterrupt           >    5   (5)
+f_TIM4_UPD_OVF_IRQHandler       >   16   (11)
+
+Debug\stm8s_adc2.o:
+_ADC2_ClearFlag                 >    2   (2)
+_ADC2_ClearITPendingBit              2   (2)
+_ADC2_Cmd                            5   (3)
+_ADC2_ConversionConfig               7   (5)
+_ADC2_DeInit                         2   (2)
+_ADC2_ExternalTriggerConfig          6   (4)
+_ADC2_GetConversionValue        >    7   (7)
+_ADC2_GetFlagStatus             >    2   (2)
+_ADC2_GetITStatus               >    2   (2)
+_ADC2_ITConfig                       5   (3)
+_ADC2_Init                          17   (10)
+_ADC2_PrescalerConfig                5   (3)
+_ADC2_SchmittTriggerConfig           6   (4)
+_ADC2_StartConversion           >    2   (2)
+
+Debug\stm8s_clk.o:
+_CLK_AdjustHSICalibrationValue  >    5   (3)
+_CLK_CANConfig                  >    5   (3)
+_CLK_CCOCmd                     >    5   (3)
+_CLK_CCOConfig                  >    5   (3)
+_CLK_ClearITPendingBit          >    5   (3)
+_CLK_ClockSecuritySystemEnable  >    2   (2)
+_CLK_ClockSwitchCmd             >    5   (3)
+_CLK_ClockSwitchConfig              12   (10)
+_CLK_DeInit                          2   (2)
+_CLK_FastHaltWakeUpCmd          >    5   (3)
+_CLK_GetClockFreq               >   25   (11)
+_CLK_GetFlagStatus              >    9   (7)
+_CLK_GetITStatus                >    6   (4)
+_CLK_GetSYSCLKSource            >    2   (2)
+_CLK_HSECmd                          5   (3)
+_CLK_HSICmd                     >    5   (3)
+_CLK_HSIPrescalerConfig         >    5   (3)
+_CLK_ITConfig                   >    6   (4)
+_CLK_LSICmd                     >    5   (3)
+_CLK_PeripheralClockConfig      >    6   (4)
+_CLK_SWIMConfig                 >    5   (3)
+_CLK_SYSCLKConfig                    5   (3)
+_CLK_SYSCLKEmergencyClear       >    2   (2)
+_CLK_SlowActiveHaltWakeUpCmd    >    5   (3)
+
+Debug\stm8s_gpio.o:
+_GPIO_DeInit                    >    2   (2)
+_GPIO_ExternalPullUpConfig      >    8   (6)
+_GPIO_Init                           8   (6)
+_GPIO_ReadInputData             >    2   (2)
+_GPIO_ReadInputPin                   5   (5)
+_GPIO_ReadOutputData            >    2   (2)
+_GPIO_Write                     >    5   (5)
+_GPIO_WriteHigh                 >    5   (5)
+_GPIO_WriteLow                  >    5   (5)
+_GPIO_WriteReverse              >    5   (5)
+
+Debug\stm8s_tim1.o:
+L11_TI4_Config                       6   (6)
+L3_TI1_Config                        6   (6)
+L5_TI2_Config                        6   (6)
+L7_TI3_Config                        6   (6)
+_TIM1_ARRPreloadConfig          >    5   (3)
+_TIM1_BDTRConfig                >   10   (8)
+_TIM1_CCPreloadControl          >    5   (3)
+_TIM1_CCxCmd                    >    6   (4)
+_TIM1_CCxNCmd                   >    6   (4)
+_TIM1_ClearFlag                 >    6   (4)
+_TIM1_ClearITPendingBit         >    5   (3)
+_TIM1_Cmd                            5   (3)
+_TIM1_CounterModeConfig         >    5   (3)
+_TIM1_CtrlPWMOutputs            >    5   (3)
+_TIM1_DeInit                         2   (2)
+_TIM1_ETRClockMode1Config       >   12   (5)
+_TIM1_ETRClockMode2Config       >   12   (5)
+_TIM1_ETRConfig                      7   (5)
+_TIM1_EncoderInterfaceConfig    >    7   (5)
+_TIM1_ForcedOC1Config           >    5   (3)
+_TIM1_ForcedOC2Config           >    5   (3)
+_TIM1_ForcedOC3Config           >    5   (3)
+_TIM1_ForcedOC4Config           >    5   (3)
+_TIM1_GenerateEvent             >    5   (3)
+_TIM1_GetCapture1               >    6   (6)
+_TIM1_GetCapture2               >    6   (6)
+_TIM1_GetCapture3               >    6   (6)
+_TIM1_GetCapture4               >    6   (6)
+_TIM1_GetCounter                >    4   (4)
+_TIM1_GetFlagStatus             >    9   (7)
+_TIM1_GetITStatus               >    7   (5)
+_TIM1_GetPrescaler              >    4   (4)
+_TIM1_ICInit                    >   13   (7)
+_TIM1_ITConfig                  >    6   (4)
+_TIM1_InternalClockConfig       >    2   (2)
+_TIM1_OC1FastConfig             >    5   (3)
+_TIM1_OC1Init                   >   16   (14)
+_TIM1_OC1NPolarityConfig        >    5   (3)
+_TIM1_OC1PolarityConfig         >    5   (3)
+_TIM1_OC1PreloadConfig          >    5   (3)
+_TIM1_OC2FastConfig             >    5   (3)
+_TIM1_OC2Init                   >   16   (14)
+_TIM1_OC2NPolarityConfig        >    5   (3)
+_TIM1_OC2PolarityConfig         >    5   (3)
+_TIM1_OC2PreloadConfig          >    5   (3)
+_TIM1_OC3FastConfig             >    5   (3)
+_TIM1_OC3Init                   >   16   (14)
+_TIM1_OC3NPolarityConfig        >    5   (3)
+_TIM1_OC3PolarityConfig         >    5   (3)
+_TIM1_OC3PreloadConfig          >    5   (3)
+_TIM1_OC4FastConfig             >    5   (3)
+_TIM1_OC4Init                   >   11   (9)
+_TIM1_OC4PolarityConfig         >    5   (3)
+_TIM1_OC4PreloadConfig          >    5   (3)
+_TIM1_PWMIConfig                >   15   (9)
+_TIM1_PrescalerConfig           >    7   (5)
+_TIM1_SelectCOM                 >    5   (3)
+_TIM1_SelectHallSensor          >    5   (3)
+_TIM1_SelectInputTrigger             5   (3)
+_TIM1_SelectMasterSlaveMode          5   (3)
+_TIM1_SelectOCxM                >    6   (4)
+_TIM1_SelectOnePulseMode        >    5   (3)
+_TIM1_SelectOutputTrigger            5   (3)
+_TIM1_SelectSlaveMode           >    5   (3)
+_TIM1_SetAutoreload             >    2   (2)
+_TIM1_SetCompare1               >    2   (2)
+_TIM1_SetCompare2               >    2   (2)
+_TIM1_SetCompare3               >    2   (2)
+_TIM1_SetCompare4               >    2   (2)
+_TIM1_SetCounter                >    2   (2)
+_TIM1_SetIC1Prescaler                5   (3)
+_TIM1_SetIC2Prescaler                5   (3)
+_TIM1_SetIC3Prescaler                5   (3)
+_TIM1_SetIC4Prescaler                5   (3)
+_TIM1_TIxExternalClockConfig    >   11   (5)
+_TIM1_TimeBaseInit                  10   (8)
+_TIM1_UpdateDisableConfig       >    5   (3)
+_TIM1_UpdateRequestConfig       >    5   (3)
+
+Debug\stm8s_tim4.o:
+_TIM4_ARRPreloadConfig          >    5   (3)
+_TIM4_ClearFlag                 >    5   (3)
+_TIM4_ClearITPendingBit              5   (3)
+_TIM4_Cmd                            5   (3)
+_TIM4_DeInit                         2   (2)
+_TIM4_GenerateEvent             >    5   (3)
+_TIM4_GetCounter                >    2   (2)
+_TIM4_GetFlagStatus             >    5   (3)
+_TIM4_GetITStatus               >    5   (3)
+_TIM4_GetPrescaler              >    2   (2)
+_TIM4_ITConfig                       6   (4)
+_TIM4_PrescalerConfig           >    6   (4)
+_TIM4_SelectOnePulseMode        >    5   (3)
+_TIM4_SetAutoreload             >    2   (2)
+_TIM4_SetCounter                >    2   (2)
+_TIM4_TimeBaseInit                   6   (4)
+_TIM4_UpdateDisableConfig       >    5   (3)
+_TIM4_UpdateRequestConfig       >    5   (3)
+
+Debug\wavedraw.o:
+L3_WDraw_DrawInterface              13   (3)
+_WDraw_DisplayDown                   2   (2)
+_WDraw_DisplayLeft                   2   (2)
+_WDraw_DisplayRight                  2   (2)
+_WDraw_DisplayUp                     2   (2)
+_WDraw_DisplayUpdate                35   (5)
+_WDraw_Init                         15   (2)
+_WDraw_SetCH1GainInfo           >    2   (2)
+_WDraw_SetCH1TimeBaseInfo       >    2   (2)
+
+Stack size: 56
+
+
+                              ---------
+                              Call tree
+                              ---------
+   1 > L7431_LCD_GoTextXY: (6)
+   2      + _LCD_WriteCommand: (5)
+       
+   3 > _ADC2_ClearFlag: (2)
+
+   4 > _ADC2_GetConversionValue: (7)
+
+   5 > _ADC2_GetFlagStatus: (2)
+
+   6 > _ADC2_GetITStatus: (2)
+
+   7 > _ADC2_StartConversion: (2)
+
+   8 > _ADC_Init: (2)
+   9      + L3_TIM1_Init: (2)
+  10      |    + _TIM1_Cmd: (3)
+  11      |    |    + _assert_failed: (2)
+          |    | 
+  12      |    + _TIM1_DeInit: (2)
+  13      |    + _TIM1_SelectMasterSlaveMode: (3)
+  14      |    |    + _assert_failed --> 11
+          |    | 
+  15      |    + _TIM1_SelectOutputTrigger: (3)
+  16      |    |    + _assert_failed --> 11
+          |    | 
+  17      |    + _TIM1_TimeBaseInit: (8)
+  18      |    |    + _assert_failed --> 11
+          |    | 
+          | 
+  19      + _ADC2_Cmd: (3)
+  20      |    + _assert_failed --> 11
+          | 
+  21      + _ADC2_DeInit: (2)
+  22      + _ADC2_ExternalTriggerConfig: (4)
+  23      |    + _assert_failed --> 11
+          | 
+  24      + _ADC2_ITConfig: (3)
+  25      |    + _assert_failed --> 11
+          | 
+  26      + _ADC2_Init: (10)
+  27      |    + _ADC2_ConversionConfig: (5)
+  28      |    |    + _assert_failed --> 11
+          |    | 
+  29      |    + _ADC2_ExternalTriggerConfig --> 22
+  30      |    + _ADC2_PrescalerConfig: (3)
+  31      |    |    + _assert_failed --> 11
+          |    | 
+  32      |    + _ADC2_SchmittTriggerConfig: (4)
+  33      |    |    + _assert_failed --> 11
+          |    | 
+  34      |    + _assert_failed --> 11
+          | 
+  35      + _GPIO_Init: (6)
+  36      |    + _assert_failed --> 11
+          | 
+       
+  37 > _CLK_AdjustHSICalibrationValue: (3)
+  38      + _assert_failed --> 11
+       
+  39 > _CLK_CANConfig: (3)
+  40      + _assert_failed --> 11
+       
+  41 > _CLK_CCOCmd: (3)
+  42      + _assert_failed --> 11
+       
+  43 > _CLK_CCOConfig: (3)
+  44      + _assert_failed --> 11
+       
+  45 > _CLK_ClearITPendingBit: (3)
+  46      + _assert_failed --> 11
+       
+  47 > _CLK_ClockSecuritySystemEnable: (2)
+
+  48 > _CLK_ClockSwitchCmd: (3)
+  49      + _assert_failed --> 11
+       
+  50 > _CLK_FastHaltWakeUpCmd: (3)
+  51      + _assert_failed --> 11
+       
+  52 > _CLK_GetClockFreq: (11)
+
+  53 > _CLK_GetFlagStatus: (7)
+  54      + _assert_failed --> 11
+       
+  55 > _CLK_GetITStatus: (4)
+  56      + _assert_failed --> 11
+       
+  57 > _CLK_GetSYSCLKSource: (2)
+
+  58 > _CLK_HSICmd: (3)
+  59      + _assert_failed --> 11
+       
+  60 > _CLK_HSIPrescalerConfig: (3)
+  61      + _assert_failed --> 11
+       
+  62 > _CLK_ITConfig: (4)
+  63      + _assert_failed --> 11
+       
+  64 > _CLK_LSICmd: (3)
+  65      + _assert_failed --> 11
+       
+  66 > _CLK_PeripheralClockConfig: (4)
+  67      + _assert_failed --> 11
+       
+  68 > _CLK_SWIMConfig: (3)
+  69      + _assert_failed --> 11
+       
+  70 > _CLK_SYSCLKEmergencyClear: (2)
+
+  71 > _CLK_SlowActiveHaltWakeUpCmd: (3)
+  72      + _assert_failed --> 11
+       
+  73 > _GPIO_DeInit: (2)
+
+  74 > _GPIO_ExternalPullUpConfig: (6)
+  75      + _assert_failed --> 11
+       
+  76 > _GPIO_ReadInputData: (2)
+
+  77 > _GPIO_ReadOutputData: (2)
+
+  78 > _GPIO_Write: (5)
+
+  79 > _GPIO_WriteHigh: (5)
+
+  80 > _GPIO_WriteLow: (5)
+
+  81 > _GPIO_WriteReverse: (5)
+
+  82 > _KEY_Init: (2)
+  83      + _GPIO_Init --> 35
+       
+  84 > _KeyParse_Init: (2)
+
+  85 > _LCD_BufferToLCD: (8)
+  86      + _LCD_WriteCommand --> 2
+  87      + _LCD_WriteData: (5)
+       
+  88 > _LCD_PutString5x8: (6)
+  89      + _LCD_PutChar5x8: (10)
+       
+  90 > _LCD_ReadCommand: (3)
+  91      + _delay_us: (3)
+       
+  92 > _LCD_ReadData: (3)
+  93      + _delay_us --> 91
+       
+  94 > _TIM1_ARRPreloadConfig: (3)
+  95      + _assert_failed --> 11
+       
+  96 > _TIM1_BDTRConfig: (8)
+  97      + _assert_failed --> 11
+       
+  98 > _TIM1_CCPreloadControl: (3)
+  99      + _assert_failed --> 11
+       
+ 100 > _TIM1_CCxCmd: (4)
+ 101      + _assert_failed --> 11
+       
+ 102 > _TIM1_CCxNCmd: (4)
+ 103      + _assert_failed --> 11
+       
+ 104 > _TIM1_ClearFlag: (4)
+ 105      + _assert_failed --> 11
+       
+ 106 > _TIM1_ClearITPendingBit: (3)
+ 107      + _assert_failed --> 11
+       
+ 108 > _TIM1_CounterModeConfig: (3)
+ 109      + _assert_failed --> 11
+       
+ 110 > _TIM1_CtrlPWMOutputs: (3)
+ 111      + _assert_failed --> 11
+       
+ 112 > _TIM1_ETRClockMode1Config: (5)
+ 113      + _TIM1_ETRConfig: (5)
+ 114      |    + _assert_failed --> 11
+          | 
+ 115      + _assert_failed --> 11
+       
+ 116 > _TIM1_ETRClockMode2Config: (5)
+ 117      + _TIM1_ETRConfig --> 113
+ 118      + _assert_failed --> 11
+       
+ 119 > _TIM1_EncoderInterfaceConfig: (5)
+ 120      + _assert_failed --> 11
+       
+ 121 > _TIM1_ForcedOC1Config: (3)
+ 122      + _assert_failed --> 11
+       
+ 123 > _TIM1_ForcedOC2Config: (3)
+ 124      + _assert_failed --> 11
+       
+ 125 > _TIM1_ForcedOC3Config: (3)
+ 126      + _assert_failed --> 11
+       
+ 127 > _TIM1_ForcedOC4Config: (3)
+ 128      + _assert_failed --> 11
+       
+ 129 > _TIM1_GenerateEvent: (3)
+ 130      + _assert_failed --> 11
+       
+ 131 > _TIM1_GetCapture1: (6)
+
+ 132 > _TIM1_GetCapture2: (6)
+
+ 133 > _TIM1_GetCapture3: (6)
+
+ 134 > _TIM1_GetCapture4: (6)
+
+ 135 > _TIM1_GetCounter: (4)
+
+ 136 > _TIM1_GetFlagStatus: (7)
+ 137      + _assert_failed --> 11
+       
+ 138 > _TIM1_GetITStatus: (5)
+ 139      + _assert_failed --> 11
+       
+ 140 > _TIM1_GetPrescaler: (4)
+
+ 141 > _TIM1_ICInit: (7)
+ 142      + L11_TI4_Config: (6)
+ 143      + L3_TI1_Config: (6)
+ 144      + L5_TI2_Config: (6)
+ 145      + L7_TI3_Config: (6)
+ 146      + _TIM1_SetIC1Prescaler: (3)
+ 147      |    + _assert_failed --> 11
+          | 
+ 148      + _TIM1_SetIC2Prescaler: (3)
+ 149      |    + _assert_failed --> 11
+          | 
+ 150      + _TIM1_SetIC3Prescaler: (3)
+ 151      |    + _assert_failed --> 11
+          | 
+ 152      + _TIM1_SetIC4Prescaler: (3)
+ 153      |    + _assert_failed --> 11
+          | 
+ 154      + _assert_failed --> 11
+       
+ 155 > _TIM1_ITConfig: (4)
+ 156      + _assert_failed --> 11
+       
+ 157 > _TIM1_InternalClockConfig: (2)
+
+ 158 > _TIM1_OC1FastConfig: (3)
+ 159      + _assert_failed --> 11
+       
+ 160 > _TIM1_OC1Init: (14)
+ 161      + _assert_failed --> 11
+       
+ 162 > _TIM1_OC1NPolarityConfig: (3)
+ 163      + _assert_failed --> 11
+       
+ 164 > _TIM1_OC1PolarityConfig: (3)
+ 165      + _assert_failed --> 11
+       
+ 166 > _TIM1_OC1PreloadConfig: (3)
+ 167      + _assert_failed --> 11
+       
+ 168 > _TIM1_OC2FastConfig: (3)
+ 169      + _assert_failed --> 11
+       
+ 170 > _TIM1_OC2Init: (14)
+ 171      + _assert_failed --> 11
+       
+ 172 > _TIM1_OC2NPolarityConfig: (3)
+ 173      + _assert_failed --> 11
+       
+ 174 > _TIM1_OC2PolarityConfig: (3)
+ 175      + _assert_failed --> 11
+       
+ 176 > _TIM1_OC2PreloadConfig: (3)
+ 177      + _assert_failed --> 11
+       
+ 178 > _TIM1_OC3FastConfig: (3)
+ 179      + _assert_failed --> 11
+       
+ 180 > _TIM1_OC3Init: (14)
+ 181      + _assert_failed --> 11
+       
+ 182 > _TIM1_OC3NPolarityConfig: (3)
+ 183      + _assert_failed --> 11
+       
+ 184 > _TIM1_OC3PolarityConfig: (3)
+ 185      + _assert_failed --> 11
+       
+ 186 > _TIM1_OC3PreloadConfig: (3)
+ 187      + _assert_failed --> 11
+       
+ 188 > _TIM1_OC4FastConfig: (3)
+ 189      + _assert_failed --> 11
+       
+ 190 > _TIM1_OC4Init: (9)
+ 191      + _assert_failed --> 11
+       
+ 192 > _TIM1_OC4PolarityConfig: (3)
+ 193      + _assert_failed --> 11
+       
+ 194 > _TIM1_OC4PreloadConfig: (3)
+ 195      + _assert_failed --> 11
+       
+ 196 > _TIM1_PWMIConfig: (9)
+ 197      + L3_TI1_Config --> 143
+ 198      + L5_TI2_Config --> 144
+ 199      + _TIM1_SetIC1Prescaler --> 146
+ 200      + _TIM1_SetIC2Prescaler --> 148
+ 201      + _assert_failed --> 11
+       
+ 202 > _TIM1_PrescalerConfig: (5)
+ 203      + _assert_failed --> 11
+       
+ 204 > _TIM1_SelectCOM: (3)
+ 205      + _assert_failed --> 11
+       
+ 206 > _TIM1_SelectHallSensor: (3)
+ 207      + _assert_failed --> 11
+       
+ 208 > _TIM1_SelectOCxM: (4)
+ 209      + _assert_failed --> 11
+       
+ 210 > _TIM1_SelectOnePulseMode: (3)
+ 211      + _assert_failed --> 11
+       
+ 212 > _TIM1_SelectSlaveMode: (3)
+ 213      + _assert_failed --> 11
+       
+ 214 > _TIM1_SetAutoreload: (2)
+
+ 215 > _TIM1_SetCompare1: (2)
+
+ 216 > _TIM1_SetCompare2: (2)
+
+ 217 > _TIM1_SetCompare3: (2)
+
+ 218 > _TIM1_SetCompare4: (2)
+
+ 219 > _TIM1_SetCounter: (2)
+
+ 220 > _TIM1_TIxExternalClockConfig: (5)
+ 221      + L3_TI1_Config --> 143
+ 222      + L5_TI2_Config --> 144
+ 223      + _TIM1_SelectInputTrigger: (3)
+ 224      |    + _assert_failed --> 11
+          | 
+ 225      + _assert_failed --> 11
+       
+ 226 > _TIM1_UpdateDisableConfig: (3)
+ 227      + _assert_failed --> 11
+       
+ 228 > _TIM1_UpdateRequestConfig: (3)
+ 229      + _assert_failed --> 11
+       
+ 230 > _TIM4_ARRPreloadConfig: (3)
+ 231      + _assert_failed --> 11
+       
+ 232 > _TIM4_ClearFlag: (3)
+ 233      + _assert_failed --> 11
+       
+ 234 > _TIM4_GenerateEvent: (3)
+ 235      + _assert_failed --> 11
+       
+ 236 > _TIM4_GetCounter: (2)
+
+ 237 > _TIM4_GetFlagStatus: (3)
+ 238      + _assert_failed --> 11
+       
+ 239 > _TIM4_GetITStatus: (3)
+ 240      + _assert_failed --> 11
+       
+ 241 > _TIM4_GetPrescaler: (2)
+
+ 242 > _TIM4_PrescalerConfig: (4)
+ 243      + _assert_failed --> 11
+       
+ 244 > _TIM4_SelectOnePulseMode: (3)
+ 245      + _assert_failed --> 11
+       
+ 246 > _TIM4_SetAutoreload: (2)
+
+ 247 > _TIM4_SetCounter: (2)
+
+ 248 > _TIM4_UpdateDisableConfig: (3)
+ 249      + _assert_failed --> 11
+       
+ 250 > _TIM4_UpdateRequestConfig: (3)
+ 251      + _assert_failed --> 11
+       
+ 252 > _TriggerInterruptInit: (2)
+
+ 253 > _WDraw_SetCH1GainInfo: (2)
+
+ 254 > _WDraw_SetCH1TimeBaseInfo: (2)
+
+ 255 > __stext: (0)
+
+ 256 > _main: (5)
+ 257      + _CLK_Init: (2)
+ 258      |    + _CLK_ClockSwitchConfig: (10)
+ 259      |    |    + _assert_failed --> 11
+          |    | 
+ 260      |    + _CLK_DeInit: (2)
+ 261      |    + _CLK_HSECmd: (3)
+ 262      |    |    + _assert_failed --> 11
+          |    | 
+ 263      |    + _CLK_SYSCLKConfig: (3)
+ 264      |    |    + _assert_failed --> 11
+          |    | 
+          | 
+ 265      + _GetTriggerPostion: (5)
+ 266      + _KEY_Scan: (4)
+ 267      |    + L12_KEY_Read: (3)
+ 268      |    |    + _GPIO_ReadInputPin: (5)
+          |    | 
+          | 
+ 269      + _KeyParse: (2)
+ 270      |    + _ADC_GainAdd: (2)
+ 271      |    + _ADC_GainSub: (2)
+ 272      |    + _ADC_TimeBaseAdd: (2)
+ 273      |    + _ADC_TimeBaseSub: (2)
+ 274      |    + _ADC_TriggerVoltageAdd: (2)
+ 275      |    + _ADC_TriggerVoltageSub: (2)
+ 276      |    + _DSO_ModeChange: (2)
+ 277      |    + _DSO_RunStop: (2)
+ 278      |    + _WDraw_DisplayDown: (2)
+ 279      |    + _WDraw_DisplayLeft: (2)
+ 280      |    + _WDraw_DisplayRight: (2)
+ 281      |    + _WDraw_DisplayUp: (2)
+          | 
+ 282      + _LCD_Init: (2)
+ 283      |    + _LCD_WriteCommand --> 2
+          | 
+ 284      + _TIM4_Init: (2)
+ 285      |    + _TIM4_Cmd: (3)
+ 286      |    |    + _assert_failed --> 11
+          |    | 
+ 287      |    + _TIM4_DeInit: (2)
+ 288      |    + _TIM4_ITConfig: (4)
+ 289      |    |    + _assert_failed --> 11
+          |    | 
+ 290      |    + _TIM4_TimeBaseInit: (4)
+ 291      |    |    + _assert_failed --> 11
+          |    | 
+          | 
+ 292      + _WDraw_DisplayUpdate: (5)
+ 293      |    + L3_WDraw_DrawInterface: (3)
+ 294      |    |    + _LCD_BufferDrawXDotLine: (10)
+ 295      |    |    + _LCD_BufferDrawYDotLine: (8)
+ 296      |    |    + _LCD_Clear: (4)
+          |    | 
+ 297      |    + _LCD_BufferDrawLine: (20)
+ 298      |    |    + L355_LCD_BufferDrawYLine: (8)
+ 299      |    |    + L543_LCD_BufferDrawXLine: (10)
+ 300      |    |    + _LCD_BufferDrawPixel: (8)
+          |    | 
+ 301      |    + _LCD_Clear --> 296
+          | 
+ 302      + _WDraw_Init: (2)
+ 303      |    + L3_WDraw_DrawInterface --> 293
+          | 
+       
+ 304 > f_ADC2_IRQHandler: (12)
+ 305      + _ADC2_ClearITPendingBit: (2)
+       
+ 306 > f_NonHandledInterrupt: (5)
+
+ 307 > f_TIM4_UPD_OVF_IRQHandler: (11)
+ 308      + _TIM4_ClearITPendingBit: (3)
+ 309      |    + _assert_failed --> 11
+          | 
+       
+ 310   L11_TI4_Config --> 142
+
+ 311   L12_KEY_Read --> 267
+
+ 312   L355_LCD_BufferDrawYLine --> 298
+
+ 313   L3_TI1_Config --> 143
+
+ 314   L3_TIM1_Init --> 9
+
+ 315   L3_WDraw_DrawInterface --> 293
+
+ 316   L543_LCD_BufferDrawXLine --> 299
+
+ 317   L5_TI2_Config --> 144
+
+ 318   L7_TI3_Config --> 145
+
+ 319   _ADC2_ClearITPendingBit --> 305
+
+ 320   _ADC2_Cmd --> 19
+
+ 321   _ADC2_ConversionConfig --> 27
+
+ 322   _ADC2_DeInit --> 21
+
+ 323   _ADC2_ExternalTriggerConfig --> 22
+
+ 324   _ADC2_ITConfig --> 24
+
+ 325   _ADC2_Init --> 26
+
+ 326   _ADC2_PrescalerConfig --> 30
+
+ 327   _ADC2_SchmittTriggerConfig --> 32
+
+ 328   _ADC_GainAdd --> 270
+
+ 329   _ADC_GainSub --> 271
+
+ 330   _ADC_TimeBaseAdd --> 272
+
+ 331   _ADC_TimeBaseSub --> 273
+
+ 332   _ADC_TriggerVoltageAdd --> 274
+
+ 333   _ADC_TriggerVoltageSub --> 275
+
+ 334   _CLK_ClockSwitchConfig --> 258
+
+ 335   _CLK_DeInit --> 260
+
+ 336   _CLK_HSECmd --> 261
+
+ 337   _CLK_Init --> 257
+
+ 338   _CLK_SYSCLKConfig --> 263
+
+ 339   _DSO_ModeChange --> 276
+
+ 340   _DSO_RunStop --> 277
+
+ 341   _GPIO_Init --> 35
+
+ 342   _GPIO_ReadInputPin --> 268
+
+ 343   _GetTriggerPostion --> 265
+
+ 344   _KEY_Scan --> 266
+
+ 345   _KeyParse --> 269
+
+ 346   _LCD_BufferDrawLine --> 297
+
+ 347   _LCD_BufferDrawPixel --> 300
+
+ 348   _LCD_BufferDrawXDotLine --> 294
+
+ 349   _LCD_BufferDrawYDotLine --> 295
+
+ 350   _LCD_Clear --> 296
+
+ 351   _LCD_Init --> 282
+
+ 352   _LCD_PutChar5x8 --> 89
+
+ 353   _LCD_WriteCommand --> 2
+
+ 354   _LCD_WriteData --> 87
+
+ 355   _TIM1_Cmd --> 10
+
+ 356   _TIM1_DeInit --> 12
+
+ 357   _TIM1_ETRConfig --> 113
+
+ 358   _TIM1_SelectInputTrigger --> 223
+
+ 359   _TIM1_SelectMasterSlaveMode --> 13
+
+ 360   _TIM1_SelectOutputTrigger --> 15
+
+ 361   _TIM1_SetIC1Prescaler --> 146
+
+ 362   _TIM1_SetIC2Prescaler --> 148
+
+ 363   _TIM1_SetIC3Prescaler --> 150
+
+ 364   _TIM1_SetIC4Prescaler --> 152
+
+ 365   _TIM1_TimeBaseInit --> 17
+
+ 366   _TIM4_ClearITPendingBit --> 308
+
+ 367   _TIM4_Cmd --> 285
+
+ 368   _TIM4_DeInit --> 287
+
+ 369   _TIM4_ITConfig --> 288
+
+ 370   _TIM4_Init --> 284
+
+ 371   _TIM4_TimeBaseInit --> 290
+
+ 372   _WDraw_DisplayDown --> 278
+
+ 373   _WDraw_DisplayLeft --> 279
+
+ 374   _WDraw_DisplayRight --> 280
+
+ 375   _WDraw_DisplayUp --> 281
+
+ 376   _WDraw_DisplayUpdate --> 292
+
+ 377   _WDraw_Init --> 302
+
+ 378   _assert_failed --> 11
+
+ 379   _delay_us --> 91
+
+
+
+                               -------
+                               Symbols
+                               -------
+
+_ADC2_ClearFlag                  0000864e   defined in Debug\stm8s_adc2.o section .text
+_ADC2_ClearITPendingBit          00008659   defined in Debug\stm8s_adc2.o section .text
+                                            used in Debug\stm8_interrupt_vector.o
+_ADC2_Cmd                        0000840b   defined in Debug\stm8s_adc2.o section .text
+                                            used in Debug\adc.o
+_ADC2_ConversionConfig           00008552   defined in Debug\stm8s_adc2.o section .text
+_ADC2_DeInit                     000082e8   defined in Debug\stm8s_adc2.o section .text
+                                            used in Debug\adc.o
+_ADC2_ExternalTriggerConfig      000085d9   defined in Debug\stm8s_adc2.o section .text
+                                            used in Debug\adc.o
+_ADC2_GetConversionValue         00008616   defined in Debug\stm8s_adc2.o section .text
+_ADC2_GetFlagStatus              00008648   defined in Debug\stm8s_adc2.o section .text
+_ADC2_GetITStatus                00008653   defined in Debug\stm8s_adc2.o section .text
+_ADC2_ITConfig                   00008426   defined in Debug\stm8s_adc2.o section .text
+                                            used in Debug\adc.o
+_ADC2_Init                       000082fd   defined in Debug\stm8s_adc2.o section .text
+                                            used in Debug\adc.o
+_ADC2_PrescalerConfig            00008441   defined in Debug\stm8s_adc2.o section .text
+_ADC2_SchmittTriggerConfig       00008476   defined in Debug\stm8s_adc2.o section .text
+_ADC2_StartConversion            00008611   defined in Debug\stm8s_adc2.o section .text
+_ADCState                        00000005   defined in Debug\main.o section .ubsct
+                                            used in Debug\stm8_interrupt_vector.o
+_ADC_Buffer                      00000700   defined in Debug\main.o section .bss
+                                            used in Debug\stm8_interrupt_vector.o
+_ADC_GainAdd                     00009d0f   defined in Debug\adc.o section .text
+                                            used in Debug\keyparse.o
+_ADC_GainSub                     00009d10   defined in Debug\adc.o section .text
+                                            used in Debug\keyparse.o
+_ADC_Index                       00000007   defined in Debug\main.o section .ubsct
+                                            used in Debug\stm8_interrupt_vector.o
+_ADC_Init                        00009cd7   defined in Debug\adc.o section .text
+_ADC_TimeBaseAdd                 00009d11   defined in Debug\adc.o section .text
+                                            used in Debug\keyparse.o
+_ADC_TimeBaseSub                 00009d12   defined in Debug\adc.o section .text
+                                            used in Debug\keyparse.o
+_ADC_TriggerVoltageAdd           00009d13   defined in Debug\adc.o section .text
+                                            used in Debug\keyparse.o
+_ADC_TriggerVoltageSub           00009d14   defined in Debug\adc.o section .text
+                                            used in Debug\keyparse.o
+_CLKPrescTable                   00008084   defined in Debug\stm8s_clk.o section .const
+_CLK_AdjustHSICalibrationValue   00008a83   defined in Debug\stm8s_clk.o section .text
+_CLK_CANConfig                   000089dd   defined in Debug\stm8s_clk.o section .text
+_CLK_CCOCmd                      00008704   defined in Debug\stm8s_clk.o section .text
+_CLK_CCOConfig                   000088d4   defined in Debug\stm8s_clk.o section .text
+_CLK_ClearITPendingBit           00008b5e   defined in Debug\stm8s_clk.o section .text
+_CLK_ClockSecuritySystemEnable   00008a12   defined in Debug\stm8s_clk.o section .text
+_CLK_ClockSwitchCmd              0000871f   defined in Debug\stm8s_clk.o section .text
+_CLK_ClockSwitchConfig           000087f2   defined in Debug\stm8s_clk.o section .text
+                                            used in Debug\main.o
+_CLK_DeInit                      0000865e   defined in Debug\stm8s_clk.o section .text
+                                            used in Debug\main.o
+_CLK_FastHaltWakeUpCmd           00008698   defined in Debug\stm8s_clk.o section .text
+_CLK_GetClockFreq                00008a1b   defined in Debug\stm8s_clk.o section .text
+_CLK_GetFlagStatus               00008ab7   defined in Debug\stm8s_clk.o section .text
+_CLK_GetITStatus                 00008b2e   defined in Debug\stm8s_clk.o section .text
+_CLK_GetSYSCLKSource             00008a17   defined in Debug\stm8s_clk.o section .text
+_CLK_HSECmd                      000086b3   defined in Debug\stm8s_clk.o section .text
+                                            used in Debug\main.o
+_CLK_HSICmd                      000086ce   defined in Debug\stm8s_clk.o section .text
+_CLK_HSIPrescalerConfig          000088af   defined in Debug\stm8s_clk.o section .text
+_CLK_ITConfig                    00008921   defined in Debug\stm8s_clk.o section .text
+_CLK_Init                        0000a70b   defined in Debug\main.o section .text
+_CLK_LSICmd                      000086e9   defined in Debug\stm8s_clk.o section .text
+_CLK_PeripheralClockConfig       00008755   defined in Debug\stm8s_clk.o section .text
+_CLK_SWIMConfig                  000089c3   defined in Debug\stm8s_clk.o section .text
+_CLK_SYSCLKConfig                0000896a   defined in Debug\stm8s_clk.o section .text
+                                            used in Debug\main.o
+_CLK_SYSCLKEmergencyClear        00008ab2   defined in Debug\stm8s_clk.o section .text
+_CLK_SlowActiveHaltWakeUpCmd     0000873a   defined in Debug\stm8s_clk.o section .text
+_DProc_GetVpp                    ********   *** removed from Debug\dataprocess.o ***
+_DProc_Init                      ********   *** removed from Debug\dataprocess.o ***
+_DSO_ModeChange                  0000a798   defined in Debug\main.o section .text
+                                            used in Debug\keyparse.o
+_DSO_RunStop                     0000a7b0   defined in Debug\main.o section .text
+                                            used in Debug\keyparse.o
+_GPIO_DeInit                     00008b7c   defined in Debug\stm8s_gpio.o section .text
+_GPIO_ExternalPullUpConfig       00008c36   defined in Debug\stm8s_gpio.o section .text
+_GPIO_Init                       00008b84   defined in Debug\stm8s_gpio.o section .text
+                                            used in Debug\adc.o Debug\key.o
+_GPIO_ReadInputData              00008c2c   defined in Debug\stm8s_gpio.o section .text
+_GPIO_ReadInputPin               00008c2f   defined in Debug\stm8s_gpio.o section .text
+                                            used in Debug\key.o
+_GPIO_ReadOutputData             00008c2a   defined in Debug\stm8s_gpio.o section .text
+_GPIO_Write                      00008c0c   defined in Debug\stm8s_gpio.o section .text
+_GPIO_WriteHigh                  00008c14   defined in Debug\stm8s_gpio.o section .text
+_GPIO_WriteLow                   00008c1b   defined in Debug\stm8s_gpio.o section .text
+_GPIO_WriteReverse               00008c23   defined in Debug\stm8s_gpio.o section .text
+_GetTriggerPostion               0000a6ec   defined in Debug\main.o section .text
+_HSIDivFactor                    00008080   defined in Debug\stm8s_clk.o section .const
+_KEY_Init                        00009d22   defined in Debug\key.o section .text
+_KEY_Scan                        00009d46   defined in Debug\key.o section .text
+                                            used in Debug\main.o
+_KEY_StateFsmTable               0000808c   defined in Debug\key.o section .const
+_KeyParse                        00009d86   defined in Debug\keyparse.o section .text
+                                            used in Debug\main.o
+_KeyParse_Init                   00009d85   defined in Debug\keyparse.o section .text
+_LCD_BufferDrawLine              0000a3b4   defined in Debug\lcd_19264.o section .text
+                                            used in Debug\wavedraw.o
+_LCD_BufferDrawPixel             00009f4f   defined in Debug\lcd_19264.o section .text
+_LCD_BufferDrawXDotLine          0000a062   defined in Debug\lcd_19264.o section .text
+                                            used in Debug\wavedraw.o
+_LCD_BufferDrawYDotLine          0000a241   defined in Debug\lcd_19264.o section .text
+                                            used in Debug\wavedraw.o
+_LCD_BufferToLCD                 0000a589   defined in Debug\lcd_19264.o section .text
+_LCD_Clear                       0000a608   defined in Debug\lcd_19264.o section .text
+                                            used in Debug\wavedraw.o
+_LCD_Init                        00009ec7   defined in Debug\lcd_19264.o section .text
+                                            used in Debug\main.o
+_LCD_PutChar5x8                  0000a687   defined in Debug\lcd_19264.o section .text
+_LCD_PutString5x8                0000a6d3   defined in Debug\lcd_19264.o section .text
+_LCD_ReadCommand                 00009e6d   defined in Debug\lcd_19264.o section .text
+_LCD_ReadData                    00009e13   defined in Debug\lcd_19264.o section .text
+_LCD_WriteCommand                00009db7   defined in Debug\lcd_19264.o section .text
+_LCD_WriteData                   00009de5   defined in Debug\lcd_19264.o section .text
+_SystemState                     00000006   defined in Debug\main.o section .ubsct
+_TIM1_ARRPreloadConfig           000094ed   defined in Debug\stm8s_tim1.o section .text
+_TIM1_BDTRConfig                 0000900b   defined in Debug\stm8s_tim1.o section .text
+_TIM1_CCPreloadControl           00009523   defined in Debug\stm8s_tim1.o section .text
+_TIM1_CCxCmd                     000096e1   defined in Debug\stm8s_tim1.o section .text
+_TIM1_CCxNCmd                    0000974f   defined in Debug\stm8s_tim1.o section .text
+_TIM1_ClearFlag                  000099d3   defined in Debug\stm8s_tim1.o section .text
+_TIM1_ClearITPendingBit          00009a3d   defined in Debug\stm8s_tim1.o section .text
+_TIM1_Cmd                        000091ae   defined in Debug\stm8s_tim1.o section .text
+                                            used in Debug\adc.o
+_TIM1_CounterModeConfig          0000946a   defined in Debug\stm8s_tim1.o section .text
+_TIM1_CtrlPWMOutputs             000091c9   defined in Debug\stm8s_tim1.o section .text
+_TIM1_DeInit                     00008c61   defined in Debug\stm8s_tim1.o section .text
+                                            used in Debug\adc.o
+_TIM1_ETRClockMode1Config        00009217   defined in Debug\stm8s_tim1.o section .text
+_TIM1_ETRClockMode2Config        00009251   defined in Debug\stm8s_tim1.o section .text
+_TIM1_ETRConfig                  00009287   defined in Debug\stm8s_tim1.o section .text
+_TIM1_EncoderInterfaceConfig     000093ec   defined in Debug\stm8s_tim1.o section .text
+_TIM1_ForcedOC1Config            0000948d   defined in Debug\stm8s_tim1.o section .text
+_TIM1_ForcedOC2Config            000094a5   defined in Debug\stm8s_tim1.o section .text
+_TIM1_ForcedOC3Config            000094bd   defined in Debug\stm8s_tim1.o section .text
+_TIM1_ForcedOC4Config            000094d5   defined in Debug\stm8s_tim1.o section .text
+_TIM1_GenerateEvent              00009616   defined in Debug\stm8s_tim1.o section .text
+_TIM1_GetCapture1                000098da   defined in Debug\stm8s_tim1.o section .text
+_TIM1_GetCapture2                000098f6   defined in Debug\stm8s_tim1.o section .text
+_TIM1_GetCapture3                00009912   defined in Debug\stm8s_tim1.o section .text
+_TIM1_GetCapture4                0000992e   defined in Debug\stm8s_tim1.o section .text
+_TIM1_GetCounter                 0000994a   defined in Debug\stm8s_tim1.o section .text
+_TIM1_GetFlagStatus              00009974   defined in Debug\stm8s_tim1.o section .text
+_TIM1_GetITStatus                000099f5   defined in Debug\stm8s_tim1.o section .text
+_TIM1_GetPrescaler               0000995f   defined in Debug\stm8s_tim1.o section .text
+_TIM1_ICInit                     00009064   defined in Debug\stm8s_tim1.o section .text
+_TIM1_ITConfig                   000091e4   defined in Debug\stm8s_tim1.o section .text
+_TIM1_InternalClockConfig        0000920e   defined in Debug\stm8s_tim1.o section .text
+_TIM1_OC1FastConfig              000095aa   defined in Debug\stm8s_tim1.o section .text
+_TIM1_OC1Init                    00008d37   defined in Debug\stm8s_tim1.o section .text
+_TIM1_OC1NPolarityConfig         0000963f   defined in Debug\stm8s_tim1.o section .text
+_TIM1_OC1PolarityConfig          00009624   defined in Debug\stm8s_tim1.o section .text
+_TIM1_OC1PreloadConfig           0000953e   defined in Debug\stm8s_tim1.o section .text
+_TIM1_OC2FastConfig              000095c5   defined in Debug\stm8s_tim1.o section .text
+_TIM1_OC2Init                    00008dfb   defined in Debug\stm8s_tim1.o section .text
+_TIM1_OC2NPolarityConfig         00009675   defined in Debug\stm8s_tim1.o section .text
+_TIM1_OC2PolarityConfig          0000965a   defined in Debug\stm8s_tim1.o section .text
+_TIM1_OC2PreloadConfig           00009559   defined in Debug\stm8s_tim1.o section .text
+_TIM1_OC3FastConfig              000095e0   defined in Debug\stm8s_tim1.o section .text
+_TIM1_OC3Init                    00008ebf   defined in Debug\stm8s_tim1.o section .text
+_TIM1_OC3NPolarityConfig         000096ab   defined in Debug\stm8s_tim1.o section .text
+_TIM1_OC3PolarityConfig          00009690   defined in Debug\stm8s_tim1.o section .text
+_TIM1_OC3PreloadConfig           00009574   defined in Debug\stm8s_tim1.o section .text
+_TIM1_OC4FastConfig              000095fb   defined in Debug\stm8s_tim1.o section .text
+_TIM1_OC4Init                    00008f83   defined in Debug\stm8s_tim1.o section .text
+_TIM1_OC4PolarityConfig          000096c6   defined in Debug\stm8s_tim1.o section .text
+_TIM1_OC4PreloadConfig           0000958f   defined in Debug\stm8s_tim1.o section .text
+_TIM1_PWMIConfig                 0000910d   defined in Debug\stm8s_tim1.o section .text
+_TIM1_PrescalerConfig            0000944e   defined in Debug\stm8s_tim1.o section .text
+_TIM1_SelectCOM                  00009508   defined in Debug\stm8s_tim1.o section .text
+_TIM1_SelectHallSensor           00009350   defined in Debug\stm8s_tim1.o section .text
+_TIM1_SelectInputTrigger         000092f4   defined in Debug\stm8s_tim1.o section .text
+_TIM1_SelectMasterSlaveMode      000093d1   defined in Debug\stm8s_tim1.o section .text
+                                            used in Debug\adc.o
+_TIM1_SelectOCxM                 000097a3   defined in Debug\stm8s_tim1.o section .text
+_TIM1_SelectOnePulseMode         0000936b   defined in Debug\stm8s_tim1.o section .text
+_TIM1_SelectOutputTrigger        00009386   defined in Debug\stm8s_tim1.o section .text
+                                            used in Debug\adc.o
+_TIM1_SelectSlaveMode            000093b1   defined in Debug\stm8s_tim1.o section .text
+_TIM1_SetAutoreload              00009831   defined in Debug\stm8s_tim1.o section .text
+_TIM1_SetCompare1                0000983a   defined in Debug\stm8s_tim1.o section .text
+_TIM1_SetCompare2                00009843   defined in Debug\stm8s_tim1.o section .text
+_TIM1_SetCompare3                0000984c   defined in Debug\stm8s_tim1.o section .text
+_TIM1_SetCompare4                00009855   defined in Debug\stm8s_tim1.o section .text
+_TIM1_SetCounter                 00009828   defined in Debug\stm8s_tim1.o section .text
+_TIM1_SetIC1Prescaler            0000985e   defined in Debug\stm8s_tim1.o section .text
+_TIM1_SetIC2Prescaler            0000987d   defined in Debug\stm8s_tim1.o section .text
+_TIM1_SetIC3Prescaler            0000989c   defined in Debug\stm8s_tim1.o section .text
+_TIM1_SetIC4Prescaler            000098bb   defined in Debug\stm8s_tim1.o section .text
+_TIM1_TIxExternalClockConfig     0000929f   defined in Debug\stm8s_tim1.o section .text
+_TIM1_TimeBaseInit               00008cfa   defined in Debug\stm8s_tim1.o section .text
+                                            used in Debug\adc.o
+_TIM1_UpdateDisableConfig        0000931b   defined in Debug\stm8s_tim1.o section .text
+_TIM1_UpdateRequestConfig        00009336   defined in Debug\stm8s_tim1.o section .text
+_TIM4_ARRPreloadConfig           00009c2b   defined in Debug\stm8s_tim4.o section .text
+_TIM4_ClearFlag                  00009c7b   defined in Debug\stm8s_tim4.o section .text
+_TIM4_ClearITPendingBit          00009ca8   defined in Debug\stm8s_tim4.o section .text
+                                            used in Debug\stm8_interrupt_vector.o
+_TIM4_Cmd                        00009b5b   defined in Debug\stm8s_tim4.o section .text
+                                            used in Debug\main.o
+_TIM4_DeInit                     00009b0c   defined in Debug\stm8s_tim4.o section .text
+                                            used in Debug\main.o
+_TIM4_GenerateEvent              00009c46   defined in Debug\stm8s_tim4.o section .text
+_TIM4_GetCounter                 00009c5c   defined in Debug\stm8s_tim4.o section .text
+_TIM4_GetFlagStatus              00009c64   defined in Debug\stm8s_tim4.o section .text
+_TIM4_GetITStatus                00009c8a   defined in Debug\stm8s_tim4.o section .text
+_TIM4_GetPrescaler               00009c60   defined in Debug\stm8s_tim4.o section .text
+_TIM4_ITConfig                   00009b76   defined in Debug\stm8s_tim4.o section .text
+                                            used in Debug\main.o
+_TIM4_Init                       0000a72a   defined in Debug\main.o section .text
+_TIM4_PrescalerConfig            00009bf0   defined in Debug\stm8s_tim4.o section .text
+_TIM4_SelectOnePulseMode         00009bd5   defined in Debug\stm8s_tim4.o section .text
+_TIM4_SetAutoreload              00009c58   defined in Debug\stm8s_tim4.o section .text
+_TIM4_SetCounter                 00009c54   defined in Debug\stm8s_tim4.o section .text
+_TIM4_TimeBaseInit               00009b25   defined in Debug\stm8s_tim4.o section .text
+                                            used in Debug\main.o
+_TIM4_UpdateDisableConfig        00009ba0   defined in Debug\stm8s_tim4.o section .text
+_TIM4_UpdateRequestConfig        00009bbb   defined in Debug\stm8s_tim4.o section .text
+_TriggerInterruptInit            0000a744   defined in Debug\main.o section .text
+_TriggerVoltage                  00000004   defined in Debug\main.o section .ubsct
+_WDraw_DisplayDown               0000a837   defined in Debug\wavedraw.o section .text
+                                            used in Debug\keyparse.o
+_WDraw_DisplayLeft               0000a838   defined in Debug\wavedraw.o section .text
+                                            used in Debug\keyparse.o
+_WDraw_DisplayRight              0000a839   defined in Debug\wavedraw.o section .text
+                                            used in Debug\keyparse.o
+_WDraw_DisplayUp                 0000a836   defined in Debug\wavedraw.o section .text
+                                            used in Debug\keyparse.o
+_WDraw_DisplayUpdate             0000a7fd   defined in Debug\wavedraw.o section .text
+                                            used in Debug\main.o
+_WDraw_Init                      0000a7fb   defined in Debug\wavedraw.o section .text
+                                            used in Debug\main.o
+_WDraw_SetCH1GainInfo            0000a83b   defined in Debug\wavedraw.o section .text
+_WDraw_SetCH1TimeBaseInfo        0000a83a   defined in Debug\wavedraw.o section .text
+__endzp                          00000015   defined in command file section .ubsct
+                                            used in C:\CXSTM8\Lib\crtsi0.sm8
+__idesc__                        00008293   defined in linker section .init
+                                            used in C:\CXSTM8\Lib\crtsi0.sm8
+__memory                         00000840   defined in command file section .bss
+                                            used in C:\CXSTM8\Lib\crtsi0.sm8
+__stack                          000017ff   defined in command file
+                                            used in C:\CXSTM8\Lib\crtsi0.sm8
+__stext                          0000829d   defined in C:\CXSTM8\Lib\crtsi0.sm8 section .text
+                                            used in Debug\stm8_interrupt_vector.o
+__vectab                         00008000   defined in Debug\stm8_interrupt_vector.o section .const
+_assert_failed                   0000a7c2   defined in Debug\main.o section .text
+                                            used in Debug\stm8s_adc2.o
+                                                    Debug\stm8s_clk.o
+                                                    Debug\stm8s_gpio.o
+                                                    Debug\stm8s_tim1.o
+                                                    Debug\stm8s_tim4.o
+_cAscii5x8Bitmap                 000080b8   defined in Debug\lcd_19264.o section .const
+_delay_us                        00009d15   defined in Debug\delay.o section .text
+                                            used in Debug\lcd_19264.o
+_exit                            000082e6   defined in C:\CXSTM8\Lib\crtsi0.sm8 section .text
+_flag_10ms_ok                    00000009   defined in Debug\main.o section .ubsct
+                                            used in Debug\stm8_interrupt_vector.o
+_main                            0000a745   defined in Debug\main.o section .text
+                                            used in C:\CXSTM8\Lib\crtsi0.sm8
+c_divsl                          0000a883   defined in (C:\CXSTM8\Lib\libm0.sm8)ldiv.o section .text
+                                            *** not used ***
+c_divul                          0000a89a   defined in (C:\CXSTM8\Lib\libm0.sm8)ldiv.o section .text
+                                            used in (C:\CXSTM8\Lib\libm0.sm8)ludiv.o
+c_imul                           0000a83c   defined in (C:\CXSTM8\Lib\libm0.sm8)imul.o section .text
+                                            used in Debug\lcd_19264.o
+c_lgneg                          0000a96e   defined in (C:\CXSTM8\Lib\libm0.sm8)lgneg.o section .text
+                                            used in (C:\CXSTM8\Lib\libm0.sm8)ldiv.o
+c_lneg                           0000a981   defined in (C:\CXSTM8\Lib\libm0.sm8)lneg.o section .text
+                                            used in (C:\CXSTM8\Lib\libm0.sm8)ldiv.o
+c_lreg                           0000000a   defined in (C:\CXSTM8\Lib\libm0.sm8)lreg.o section .ubsct
+                                            used in Debug\stm8s_clk.o
+                                                    (C:\CXSTM8\Lib\libm0.sm8)ltor.o
+                                                    (C:\CXSTM8\Lib\libm0.sm8)ldiv.o
+                                                    (C:\CXSTM8\Lib\libm0.sm8)lneg.o
+                                                    (C:\CXSTM8\Lib\libm0.sm8)rtol.o
+c_ltor                           0000a85d   defined in (C:\CXSTM8\Lib\libm0.sm8)ltor.o section .text
+                                            used in Debug\stm8s_clk.o
+c_ludv                           0000a86f   defined in (C:\CXSTM8\Lib\libm0.sm8)ludiv.o section .text
+                                            used in Debug\stm8s_clk.o
+c_rtol                           0000a996   defined in (C:\CXSTM8\Lib\libm0.sm8)rtol.o section .text
+                                            used in Debug\stm8s_clk.o
+c_x                              0000000e   defined in (C:\CXSTM8\Lib\libm0.sm8)xreg.o section .ubsct
+                                            used in C:\CXSTM8\Lib\crtsi0.sm8
+                                                    (C:\CXSTM8\Lib\libm0.sm8)imul.o
+                                                    (C:\CXSTM8\Lib\libm0.sm8)ldiv.o
+                                                    Debug\stm8_interrupt_vector.o
+c_y                              00000011   defined in (C:\CXSTM8\Lib\libm0.sm8)yreg.o section .ubsct
+                                            used in C:\CXSTM8\Lib\crtsi0.sm8
+                                                    Debug\stm8_interrupt_vector.o
+f_ADC2_IRQHandler                0000a9d5   defined in Debug\stm8_interrupt_vector.o section .text
+f_NonHandledInterrupt            0000a9a8   defined in Debug\stm8_interrupt_vector.o section .text
+f_TIM4_UPD_OVF_IRQHandler        0000a9a9   defined in Debug\stm8_interrupt_vector.o section .text
