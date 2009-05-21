@@ -1,73 +1,79 @@
 #include "lcd_19264.h"
-#include "delay.h"
 #include "ascii_5x8.h"
 
 static u8 dirty;
 @near volatile static u8 DisplayBuffer[8][192];
 
-#define DELAY_US(x)     do{u8 y=x; while(y--) _asm("nop\n");}while(0)
+void DELAY_US(u8 x)
+{
+	while(x--)
+	{
+		_asm("nop");
+		_asm("nop");
+		_asm("nop");
+	}
+}
 
 void LCD_WriteCommand(u8 cmd, u8 ChipSel)
 {
-    disableInterrupts();
-    LCD_RW_L();
-    LCD_RS_L(); // Command Signal
-    LCD_SET_CS_SIGNAL(ChipSel);
+  disableInterrupts();
+  LCD_RW_L();
+  LCD_RS_L(); // Command Signal
+  LCD_SET_CS_SIGNAL(ChipSel);
 
-    LCD_E_H();
+	LCD_E_H();
 	LCD_SET_DATA(cmd);
     
-    DELAY_US(100);
+	DELAY_US(15);
     
 	LCD_E_L();
-    enableInterrupts();
+	enableInterrupts();
 
 }
 
 void LCD_WriteData(u8 Data, u8 ChipSel)
 {
-    disableInterrupts();
-	// LCD_E_L();	
-	LCD_RW_L();
+		disableInterrupts();
+		// LCD_E_L();	
+		LCD_RW_L();
     LCD_RS_H(); // Data Signal
     LCD_SET_CS_SIGNAL(ChipSel);
 	
     LCD_E_H();
 
-	LCD_SET_DATA(Data);
+		LCD_SET_DATA(Data);
     
-    DELAY_US(5);
+    DELAY_US(15);
 
-	LCD_E_L();
+		LCD_E_L();
     enableInterrupts();
 }
 
 u8 LCD_ReadData(void)
 {
-	u8 rData;
+		u8 rData;
 
-	LCD_E_L();
-	LCD_RW_H();
+		LCD_E_L();
+		LCD_RW_H();
     
     LCD_CSA_L();
     LCD_CSB_L();
 	
-	LCD_RS_H();
+		LCD_RS_H();
 
-	LCD_E_H();
-	delay_us(1);
+		LCD_E_H();
+		DELAY_US(1);
 	
-	LCD_DATA_INPUT_MODE();
-	rData = LCD_READ_DATA();
-	LCD_DATA_OUTPUT_MODE();
+		LCD_DATA_INPUT_MODE();
+		rData = LCD_READ_DATA();
+		LCD_DATA_OUTPUT_MODE();
+	
+		LCD_RW_L();
+		LCD_E_H();
+		LCD_CSA_H();
+		LCD_CSB_H();
 
-	LCD_RW_L();
-	LCD_E_H();
-	LCD_CSA_H();
-	LCD_CSB_H();
-
-	return rData;
-
+		return rData;
 }
 
 u8 LCD_ReadCommand(void)
@@ -83,7 +89,7 @@ u8 LCD_ReadCommand(void)
 	LCD_RS_L();
 
 	LCD_E_H();
-	delay_us(1);
+	DELAY_US(1);
 
 	LCD_DATA_INPUT_MODE();
 	rData = LCD_READ_DATA();
@@ -475,8 +481,8 @@ static void LCD_GoTextXY(u8 x, u8 y)
 { 
     u8 chip;
     u8 tmp = x * 6;
-    if(tmp > 192) tmp=0;       // 如果列地址超出范围就回到0列  
-    if(y > 8) y=0;             // 如果行地址超出范围就回到0行  
+    if(tmp > 192) tmp=0;        // 如果列地址超出范围就回到0列  
+    if(y > 8) y=0;              // 如果行地址超出范围就回到0行  
     if( tmp < 64 )
     {
         chip = LCD_LEFT;

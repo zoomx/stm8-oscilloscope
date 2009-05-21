@@ -25,17 +25,14 @@ ExternDep= adc.c C:\CXSTM8\Hstm8\mods0.h library\inc\stm8s.h  library\inc\stm8s_
 [Root.Source Files.dataprocess.c.Config.0]
 ExternDep= dataprocess.c C:\CXSTM8\Hstm8\mods0.h  library\inc\stm8s.h library\inc\stm8s_type.h stm8s_conf.h  library\inc\stm8s_adc2.h library\inc\stm8s_clk.h library\inc\stm8s_gpio.h  library\inc\stm8s_tim1.h library\inc\stm8s_tim4.h dataprocess.h
 
-[Root.Source Files.delay.c.Config.0]
-ExternDep= delay.c C:\CXSTM8\Hstm8\mods0.h delay.h library\inc\stm8s.h  library\inc\stm8s_type.h stm8s_conf.h library\inc\stm8s_adc2.h  library\inc\stm8s_clk.h library\inc\stm8s_gpio.h library\inc\stm8s_tim1.h  library\inc\stm8s_tim4.h
-
 [Root.Source Files.key.c.Config.0]
 ExternDep= key.c C:\CXSTM8\Hstm8\mods0.h key.h library\inc\stm8s.h  library\inc\stm8s_type.h stm8s_conf.h library\inc\stm8s_adc2.h  library\inc\stm8s_clk.h library\inc\stm8s_gpio.h library\inc\stm8s_tim1.h  library\inc\stm8s_tim4.h
 
 [Root.Source Files.keyparse.c.Config.0]
-ExternDep= keyparse.c C:\CXSTM8\Hstm8\mods0.h library\inc\stm8s.h  library\inc\stm8s_type.h stm8s_conf.h library\inc\stm8s_adc2.h  library\inc\stm8s_clk.h library\inc\stm8s_gpio.h library\inc\stm8s_tim1.h  library\inc\stm8s_tim4.h keyparse.h adc.h wavedraw.h main.h
+ExternDep= keyparse.c C:\CXSTM8\Hstm8\mods0.h library\inc\stm8s.h  library\inc\stm8s_type.h stm8s_conf.h library\inc\stm8s_adc2.h  library\inc\stm8s_clk.h library\inc\stm8s_gpio.h library\inc\stm8s_tim1.h  library\inc\stm8s_tim4.h keyparse.h adc.h wavedraw.h main.h lcd_19264.h
 
 [Root.Source Files.lcd_19264.c.Config.0]
-ExternDep= lcd_19264.c C:\CXSTM8\Hstm8\mods0.h lcd_19264.h  library\inc\stm8s.h library\inc\stm8s_type.h stm8s_conf.h  library\inc\stm8s_adc2.h library\inc\stm8s_clk.h library\inc\stm8s_gpio.h  library\inc\stm8s_tim1.h library\inc\stm8s_tim4.h delay.h ascii_5x8.h
+ExternDep= lcd_19264.c C:\CXSTM8\Hstm8\mods0.h lcd_19264.h  library\inc\stm8s.h library\inc\stm8s_type.h stm8s_conf.h  library\inc\stm8s_adc2.h library\inc\stm8s_clk.h library\inc\stm8s_gpio.h  library\inc\stm8s_tim1.h library\inc\stm8s_tim4.h ascii_5x8.h
 
 [Root.Source Files.main.c.Config.0]
 ExternDep= main.c C:\CXSTM8\Hstm8\mods0.h library\inc\stm8s.h  library\inc\stm8s_type.h stm8s_conf.h library\inc\stm8s_adc2.h  library\inc\stm8s_clk.h library\inc\stm8s_gpio.h library\inc\stm8s_tim1.h  library\inc\stm8s_tim4.h main.h key.h keyparse.h dataprocess.h lcd_19264.h  wavedraw.h adc.h
