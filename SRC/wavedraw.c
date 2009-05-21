@@ -25,8 +25,8 @@ static void WDraw_DrawInterface(void)
 
 void WDraw_Init(void)
 {
-	WDraw_DrawInterface();
-    
+		WDraw_DrawInterface();
+		LCD_BufferToLCD();
 }
 
 void WDraw_DisplayUpdate(@near u8 *pWaveData)
@@ -37,6 +37,8 @@ void WDraw_DisplayUpdate(@near u8 *pWaveData)
     
     for( j = 0 ; j < 160 ; ++j )
         LCD_BufferDrawLine(j, pWaveData[j], j+1, pWaveData[j+1], LCD_SET); 
+		
+		LCD_BufferToLCD();
 }
 
 void WDraw_DisplayUp(void)

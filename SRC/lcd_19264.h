@@ -5,14 +5,7 @@
 
 // DB7~DB3
 #define LCD_DATA_PORT		(GPIOB)
-//#define LCD_DATA_PIN		(GPIO_PIN_7|GPIO_PIN_6|GPIO_PIN_5|GPIO_PIN_4)
 #define LCD_DATA_PIN		(GPIO_PIN_ALL)
-// DB2,DB1
-//#define LCD_DATA2_PORT      (GPIOC)
-//#define LCD_DATA2_PIN       (GPIO_PIN_7|GPIO_PIN_6|GPIO_PIN_5)
-// DB0
-//#define LCD_DATA3_PORT      (GPIOE)
-//#define LCD_DATA3_PIN       (GPIO_PIN_0)
 //  推挽高速10MHz输出模式
 #define LCD_DATA_OUTPUT_MODE()  do{ \
                                     LCD_DATA_PORT->DDR |= LCD_DATA_PIN; \
@@ -49,14 +42,8 @@
 #define LCD_RS_L()	(LCD_CONTROL_PORT->ODR &= ~LCD_RS_PIN)
 #define LCD_RW_H()	(LCD_CONTROL_PORT->ODR |= LCD_RW_PIN)
 #define LCD_RW_L()	(LCD_CONTROL_PORT->ODR &= ~LCD_RW_PIN)
-// 优化控制信号的生成, PA口只有PIN4、PIN5、PIN6
-// 所以可直接赋值不考虑对其他位的影响
-#define LCD_SET_WDATA_SINGLE()  (LCD_CONTROL_PORT->ODR = LCD_E_PIN | LCD_RS_PIN & ~LCD_RW_PIN )
 
 
-#define LCD_LEFT        ((u8)0)
-#define LCD_MID         ((u8)1)
-#define LCD_RIGHT       ((u8)2)
 // CSA, CSB
 #define LCD_CS_PORT		(GPIOE)
 #define LCD_CSA_PIN		(GPIO_PIN_6)
@@ -71,9 +58,11 @@
 #define LCD_CSA_L()	    (LCD_CS_PORT->ODR &= ~LCD_CSA_PIN)
 #define LCD_CSB_H()	    (LCD_CS_PORT->ODR |= LCD_CSB_PIN)
 #define LCD_CSB_L()	    (LCD_CS_PORT->ODR &= ~LCD_CSB_PIN)
-// 不能移植的优化，PG只有PIN0,PIN1
-// 直接赋值影响高位也没关系,而且CSCHIP的值恰好就是需要的信号
-#define LCD_SET_CS_SIGNAL(CSCHIP)     (LCD_CS_PORT->ODR = CSCHIP)
+// 为快速生成片选信号而优化
+#define LCD_LEFT        ((u8)0)
+#define LCD_MID         ((u8)1)
+#define LCD_RIGHT       ((u8)2)
+#define LCD_SET_CS_SIGNAL(CSCHIP)     (LCD_CS_PORT->ODR = (CSCHIP)<<6)
 
 #define LCD_RES_PORT    (GPIOC)
 #define LCD_RES_PIN     (GPIO_PIN_4)

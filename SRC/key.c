@@ -40,34 +40,44 @@ struct KEY_StateFsm const KEY_StateFsmTable[] = {
 
 void KEY_Init(void)
 {
-	/* Initialize I/O in Input Mode with No Interrupt */
-	GPIO_Init(KEY_PORT, KEY_PIN, GPIO_MODE_IN_FL_NO_IT); 
-
+	GPIO_Init(KEY_ROW_PORT, KEY_ROW_PINALL, GPIO_MODE_IN_PU_NO_IT);
+	GPIO_Init(KEY_COLUMN_PORT, KEY_COLUMN_PINALL , GPIO_MODE_OUT_PP_LOW_FAST ); 
 }
 
 /* 
-   功能描述：读取按键状态, 根据不同按键电路和编号方式修改本函数
+   功能描述：读取按键状态,  根据不同按键电路和编号方式修改本函数
    入口参数：无
    出口参数：按键编号
+	 
+	 ROW : PD7 PD6 PD5
+	 COLUMN : PG5 PG4 PG3 PG2
    */
 static u8 KEY_Read(void)
-{
-    
-    u8 KCode = 0;
-/*	u8 KMask;
-    // 读引脚状态，取反后1表示键按下
-    KMask = GPIO_ReadInputData(KEY_PORT) ^ 0xFF;
-	
-
-	// KEY_PORT上接8个独立式按键，从低到高编号为1~8
-	while(KMask != 0)
-	{
-		KMask >>= 1;
-		KCode++;
-	}
-*/
-    if( GPIO_ReadInputPin(KEY_PORT, KEY_PIN) == RESET )
-        KCode = 1;
+{    
+  u8 KCode = 0;
+	u8 row = 0, column = 0;
+	u8 t;
+	GPIO_WriteLow(KEY_COLUMN_PORT, KEY_COLUMN_PINALL);	 
+	t = (~GPIO_ReadInputData(KEY_ROW_PORT))&KEY_ROW_PINALL;
+	if(t)
+		{
+			// 有键按下，找到它
+			u8 t2 = ~KEY_COLUMN1_PIN;
+			while(++column <= KEY_COLUMN_NUM)
+			{
+				KEY_COLUMN_PORT->ODR |= KEY_COLUMN_PINALL; 							// 所有列线置高
+				KEY_COLUMN_PORT->ODR &= t2;								 							// 扫描列置底
+				row = (~GPIO_ReadInputData(KEY_ROW_PORT))&KEY_ROW_PINALL;	// 读行线
+				if( row == t)
+					break;
+				else
+					t2 >>= 1;
+			}
+			KCode = 3*(column-1);
+			if( row == KEY_ROW1_PIN ) KCode += 1;
+			else if(row == KEY_ROW2_PIN) KCode += 2;
+			else KCode += 3;
+		}
 	return KCode;
 }
 

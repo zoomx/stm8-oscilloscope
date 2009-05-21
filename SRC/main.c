@@ -39,20 +39,21 @@ u16 GetTriggerPostion(u16 start, u8 tigvol)
 }
 
 void CLK_Init(void)
-{
-    
-    CLK_DeInit();
-
-    /* Configure the Fcpu to DIV1*/
-    CLK_SYSCLKConfig(CLK_PRESCALER_CPUDIV1);
+{    
+    /* Configure clock prescaler */
+    CLK->CKDIVR = 0x00;          /* To be programmed with different value */
+                                 /* Fmaster, Fmaster/1, ...               */
+    /* To select external source by automtic switch */
+    CLK->SWCR |= 0x02;            /* Enable switch */
+    CLK->SWR   = 0xB4;            /* Select HSE */
 		
-    /* Configure the HSI prescaler to the optimal value */
-    CLK_SYSCLKConfig(CLK_PRESCALER_HSIDIV1);
+    while (!(CLK->SWCR & 0x08));  /* Wait for switch done */
+		
+		/* verify the external clock is selected (optional) */
+    if (CLK->CMSR != 0xB4)        
+		    while(1);
     
-    /* Initilize the CLock controller according to CLK_InitStructure */
-    CLK_ClockSwitchConfig(CLK_SWITCHMODE_AUTO, CLK_SOURCE_HSE, DISABLE, DISABLE);
-    
-    CLK_HSECmd(ENABLE);
+    CLK->CSSR |= 0x01; 
 }
 
 void TIM4_Init(void)
@@ -79,29 +80,30 @@ void main(void)
     
     SystemState = AutoRunMode;
     // 现在还是使用软件触发
-    ADCState = Triggered;       // ADCState = WaitTrigger;
+	  ADCState = Triggered;       // ADCState = WaitTrigger;
 
     CLK_Init();                 // 主时钟初始化
     TIM4_Init();                // TIM4 用于产生系统运行需要的定时信号
-  //  KEY_Init();                 // 按键驱动初始化
-  //  KeyParse_Init();            // 按键处理模块初始化
+    KEY_Init();                 // 按键驱动初始化
+    KeyParse_Init();            // 按键处理模块初始化
     LCD_Init();                 // LCD驱动初始化
     WDraw_Init();               // 波形显示模块初始化
-  //  TriggerInterruptInit();     // 外部触发中断初始化
-  //  ADC_Init();                 // ADC采样程控模块初始化
-  //  DProc_Init();               // 数据处理模块初始化
-    
+    TriggerInterruptInit();     // 外部触发中断初始化
+    ADC_Init();                 // ADC采样程控模块初始化
+    DProc_Init();               // 数据处理模块初始化
+  
+
     enableInterrupts();
-//LCD_BufferDrawLine(0,0,50,50,LCD_SET);
-//LCD_BufferToLCD();
+
     /* Infinite loop */
     while (1)
     {
-        if(flag_10ms_ok)
+    
+				if(flag_10ms_ok)
         {
             flag_10ms_ok = 0;
             keycode = KEY_Scan();
-            switch(GET_KTYPE(keycode))
+						switch(GET_KTYPE(keycode))
             {
                 case KTYPE_NORMAL:
                     KeyParse(GET_KCODE(keycode));
@@ -126,7 +128,8 @@ void main(void)
             default:
                 break;
         }
-    }
+		
+		}
   
 }
 

@@ -78,8 +78,8 @@ String.103.0=.\;library\src;
 
 [Root.Config.0.Settings.2]
 String.2.0=
-String.6.0=2009,5,17,23,42,43
-String.100.0=STM8S207S8
+String.6.0=2009,5,18,8,39,59
+String.100.0=STM8S208RB
 
 [Root.Config.0.Settings.3]
 String.2.0=Compiling $(InputFile)...
@@ -106,23 +106,23 @@ String.3.0=clnk $(ToolsetLibOpts) -o $(OutputPath)$(TargetSName).sm8 -fakeIntege
 String.3.1=cvdwarf $(OutputPath)$(TargetSName).sm8 -fakeVectAddr0x8000
 String.4.0=$(OutputPath)$(TargetFName)
 String.5.0=$(OutputPath)$(ProjectSFile).elf $(OutputPath)$(TargetSName).map
-String.6.0=2009,5,17,23,42,43
+String.6.0=2009,5,18,8,39,59
 String.100.0=
 String.101.0=crtsi.st7
-String.102.0=+seg .const -b 0x8080 -m 0xff80 -n .const -it 
+String.102.0=+seg .const -b 0x8080 -m 0x1ff80 -n .const -it 
 String.102.1=+seg .text -a .const -n .text 
-String.102.2=+seg .eeprom -b 0x4000 -m 0x600 -n .eeprom 
+String.102.2=+seg .eeprom -b 0x4000 -m 0x800 -n .eeprom 
 String.102.3=+seg .bsct -b 0x0 -m 0x100 -n .bsct 
 String.102.4=+seg .ubsct -a .bsct -n .ubsct 
 String.102.5=+seg .bit -a .ubsct -n .bit -id 
 String.102.6=+seg .share -a .bit -n .share -is 
-String.102.7=+seg .data -b 0x100 -m 0xb00 -n .data 
+String.102.7=+seg .data -b 0x100 -m 0x1300 -n .data 
 String.102.8=+seg .bss -a .data -n .bss
-String.103.0=Code,Constants[0x8080-0x17fff]=.const,.text
-String.103.1=Eeprom[0x4000-0x45ff]=.eeprom
+String.103.0=Code,Constants[0x8080-0x27fff]=.const,.text
+String.103.1=Eeprom[0x4000-0x47ff]=.eeprom
 String.103.2=Zero Page[0x0-0xff]=.bsct,.ubsct,.bit,.share
-String.103.3=Ram[0x100-0xbff]=.data,.bss
-String.104.0=0xfff
+String.103.3=Ram[0x100-0x13ff]=.data,.bss
+String.104.0=0x17ff
 String.105.0=libis0.sm8;libm0.sm8
 Int.0=0
 Int.1=0
@@ -160,8 +160,8 @@ String.103.0=.\;library\src;
 
 [Root.Config.1.Settings.2]
 String.2.0=
-String.6.0=2009,5,17,23,42,43
-String.100.0=STM8S207S8
+String.6.0=2009,5,18,8,39,59
+String.100.0=STM8S208RB
 
 [Root.Config.1.Settings.3]
 String.2.0=Compiling $(InputFile)...
@@ -187,22 +187,22 @@ String.3.0=clnk -fakeRunConv -fakeInteger -fakeAutoGen $(ToolsetLibOpts) -o $(Ou
 String.3.1=cvdwarf $(OutputPath)$(TargetSName).sm8 -fakeVectAddr0x8000
 String.4.0=$(OutputPath)$(TargetFName)
 String.5.0=$(OutputPath)$(TargetSName).map $(OutputPath)$(TargetSName).st7 $(OutputPath)$(TargetSName).s19
-String.6.0=2009,5,17,23,42,43
+String.6.0=2009,5,18,8,39,59
 String.101.0=crtsi.st7
-String.102.0=+seg .const -b 0x8080 -m 0xff80 -n .const -it 
+String.102.0=+seg .const -b 0x8080 -m 0x1ff80 -n .const -it 
 String.102.1=+seg .text -a .const -n .text 
-String.102.2=+seg .eeprom -b 0x4000 -m 0x600 -n .eeprom 
+String.102.2=+seg .eeprom -b 0x4000 -m 0x800 -n .eeprom 
 String.102.3=+seg .bsct -b 0x0 -m 0x100 -n .bsct 
 String.102.4=+seg .ubsct -a .bsct -n .ubsct 
 String.102.5=+seg .bit -a .ubsct -n .bit -id 
 String.102.6=+seg .share -a .bit -n .share -is 
-String.102.7=+seg .data -b 0x100 -m 0xb00 -n .data 
+String.102.7=+seg .data -b 0x100 -m 0x1300 -n .data 
 String.102.8=+seg .bss -a .data -n .bss
-String.103.0=Code,Constants[0x8080-0x17fff]=.const,.text
-String.103.1=Eeprom[0x4000-0x45ff]=.eeprom
+String.103.0=Code,Constants[0x8080-0x27fff]=.const,.text
+String.103.1=Eeprom[0x4000-0x47ff]=.eeprom
 String.103.2=Zero Page[0x0-0xff]=.bsct,.ubsct,.bit,.share
-String.103.3=Ram[0x100-0xbff]=.data,.bss
-String.104.0=0xfff
+String.103.3=Ram[0x100-0x13ff]=.data,.bss
+String.104.0=0x17ff
 Int.0=0
 Int.1=0
 
@@ -395,11 +395,6 @@ Next=Root.Source Files.dataprocess.c
 [Root.Source Files.dataprocess.c]
 ElemType=File
 PathName=dataprocess.c
-Next=Root.Source Files.delay.c
-
-[Root.Source Files.delay.c]
-ElemType=File
-PathName=delay.c
 Next=Root.Source Files.key.c
 
 [Root.Source Files.key.c]
